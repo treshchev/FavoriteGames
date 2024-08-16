@@ -29,7 +29,7 @@ int main()
 	   {
 		   if (WritedGames.empty())
 		   {
-			   std::cout << "Your list is empty";
+			   std::cout << "Your list is empty\n";
 		   }
 		   else
 		   {
@@ -54,6 +54,7 @@ int main()
 				   std::cout << "- " << WritedGames[i] << std::endl;
 			   }
 		   }
+
 		   int IndexForDelete;
 		   std::cout << "Choose your game to delete: \n";
 		   std::cin >> IndexForDelete;
