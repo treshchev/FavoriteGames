@@ -8,9 +8,9 @@ int main()
 
 	while (true)
 	{
-       std::cout << "Write your Favorite Games\n\n" << std::endl;
+       std::cout << "Write your Favorite Games\n" << std::endl;
 
-	   std::cout << "Choose action: "
+	   std::cout << "Choose action: \n"
 		   << "1. Add Game\n"
 		   << "2. Show list of your games\n"
 		   << "3. Deleted games\n"
@@ -33,7 +33,7 @@ int main()
 		   }
 		   else
 		   {
-			   std::cout << "Your list:";
+			   std::cout << "Your list: \n";
 			   for (size_t i = 0; i < WritedGames.size(); i++)
 			   {
 				   std::cout << "- " << WritedGames[i] << std::endl;
@@ -44,18 +44,18 @@ int main()
 	   {
 		   if (WritedGames.empty())
 		   {
-			   std::cout << "Your list is empty";
+			   std::cout << "Your list is empty\n";
 		   }
 		   else
 		   {
-			   std::cout << "Your list:";
+			   std::cout << "Your list: \n";
 			   for (size_t i = 0; i < WritedGames.size(); i++)
 			   {
 				   std::cout << "- " << WritedGames[i] << std::endl;
 			   }
 		   }
 		   int IndexForDelete;
-		   std::cout << "Choose you game to delete: ";
+		   std::cout << "Choose your game to delete: \n";
 		   std::cin >> IndexForDelete;
 
 		   if (IndexForDelete >= 1 && IndexForDelete <= WritedGames.size())
