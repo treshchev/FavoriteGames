@@ -68,5 +68,14 @@ int main()
 			   std::cout << "You wrote incorrect number\n" << std::endl;
 		   }
 	   }
+	   else if (Input == "4")
+	   {
+		   break;
+	   }
+	   else
+	   {
+		   std::cout << "You wrote incorrect number\n" << std::endl;
+	   }
 	}
+	return 0;
 }
